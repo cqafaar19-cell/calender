@@ -1,0 +1,115 @@
+/* CSS Reset: Removes default browser spacing */
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        /* Hero section: Centers the calendar and sets the background */
+        .hero {
+            width: 100%;
+            min-height: 100vh;
+            background: linear-gradient(45deg, #1a1a2e, #16213e);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        /* Calendar Card: The main container */
+        .calendar {
+            width: 400px;
+            height: 300px;
+            background: #fff;
+            display: flex;
+            border-radius: 15px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+            overflow: hidden;
+        }
+
+        /* Shared styles for both halves of the calendar */
+        .left, .right {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        /* Left side: Displays the numerical date and day name */
+        .left {
+            width: 60%;
+            background: #f8f9fa;
+        }
+
+        #date {
+            font-size: 80px;
+            line-height: 1;
+            font-weight: bold;
+            color: #333;
+        }
+
+        #day {
+            font-size: 20px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        /* Right side: Displays the month and year */
+        .right {
+            width: 40%;
+            background: #ff4646;
+            color: #fff;
+        }
+
+        #month {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        #year {
+            font-size: 18px;
+        }
+
+        /* Styling for the small navigation buttons */
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        button {
+            background: rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        /* Makes buttons on the red side white */
+        .right button {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid white;
+            color: white;
+        }
+
+        button:hover {
+            background: rgba(255, 255, 255, 0.4);
+            transform: scale(1.1); /* Slight pop effect on hover */
+        }
+
+        /* Big 'Reset' button at the bottom */
+        .today-btn {
+            margin-top: 30px;
+            padding: 12px 30px;
+            background: #00d2ff;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            box-shadow: 0 5px 15px rgba(0, 210, 255, 0.3);
+        }

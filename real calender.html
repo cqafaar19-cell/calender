@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Interactive Calendar - Commented Version</title>
+    <link rel="stylesheet" href="real calender.css">
+</head>
+<body>
+
+    <div class="hero">
+        <div class="calendar">
+            <div class="left">
+                <div class="controls">
+                    <button onclick="changeDate(-1)">- Date</button>
+                    <button onclick="changeDate(1)">+ Date</button>
+                </div>
+                <p id="date">01</p>
+                <p id="day">Sunday</p>
+            </div>
+
+            <div class="right">
+                <div class="controls">
+                    <button onclick="changeMonth(-1)">&#10094;</button>
+                    <button onclick="changeMonth(1)">&#10095;</button>
+                </div>
+                <p id="month">January</p>
+                <div class="controls">
+                    <button onclick="changeYear(-1)">- Yr</button>
+                    <button onclick="changeYear(1)">+ Yr</button>
+                </div>
+                <p id="year">2026</p>
+            </div>
+        </div>
+
+        <button class="today-btn" onclick="resetToToday()">Reset to Today</button>
+    </div>
+    <script src="real calender.js"></script>
+    
+</body>
+</html>
